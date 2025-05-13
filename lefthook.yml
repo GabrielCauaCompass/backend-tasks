@@ -1,0 +1,10 @@
+pre-commit:
+  parallel: true
+  commands:
+    test:
+      run: npm test
+
+commit-msg:
+  commands:
+    commitlint:
+      run: npm run lint:commit
